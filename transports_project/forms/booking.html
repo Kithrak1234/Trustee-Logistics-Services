@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="website icon" href="E:\karthik\project\transports_project\icon.png">
+</head>
+    <link rel="stylesheet" href="E:\karthik\project\transports_project\css\booking.css">
+    <link rel="stylesheet" href="../css/payment_css.css">
+<body>
+    <form class="Booking" >
+        <div class="bookingdetails" aria-required="true">
+            <h2>Booking Details</h2>
+            <div class="name">
+                <label id="Name">Your Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
+            </div>
+            <div class="email">
+                <label id="Email Address">Email Address:</label>
+                <input type="email" id="Email Address" name="email" placeholder="Enter the Email" required>
+            </div>
+            <div class="address">
+                <label id="Home">Home Address:</label>
+                <textarea rows="5" cols="30" name="description" placeholder="Enter the address" required>
+    
+                </textarea>
+            </div>
+            <div class="pincode">
+                <label id="Pincodde">Pincode:</label>
+                <input type="number" id="Pincode" name="pincode" placeholder="Pincodde" required>
+            </div>
+            <div class="contact">
+                <label id="Contact Number">Contact Number:</label>
+                <input type="number" id="Contact Number" name="contact" placeholder="phone Number" required>
+            </div>
+        </div>
+        <div class="destination">
+            <h2>Destination</h2>
+            <div class="customer_name">
+                <label for="Customer_Name">Customer Name:</label>
+                <input type="text" id="Customer_Name" name="Customer_name"  placeholder="Customer Name" pattern="[a-z]*" required>
+            </div>
+            <div class="customer_address">
+                <label id="customer_address">Customer Address:</label>
+                <textarea rows="5" cols="30" name="description" placeholder="Enter the address" required>
+    
+                </textarea>
+            </div>
+            <div class="contact_no">
+                <label id="Contact Number">Contact Number:</label>
+                <input type="number" id="Contact Number" name="contact" placeholder="phone Number" required>
+
+            </div>
+            <div class="pincode">
+                <label for="Pincodde">Pincode:</label>
+                <input type="number" id="Pincode" name="pincode" placeholder="Pincodde" required>
+            </div>
+            <div class="paid">
+                <label for="payment">Payment Details:</label><br>
+                <input type="radio" id="paid" name="payment">
+                <label for="paid">paid</label>
+                <input type="radio" id="Topay" name="payment">
+                <label for="Topay">Topay</label>
+            </div>
+            <div class="meterial">
+                <label id="Metrial">Metrial:</label>
+                <select id="meterial">
+                    <option value="Cottonbox">Cottonbox</option>
+                    <option value="Wood and case">Wood and case</option>
+                </select>
+            </div>
+            <div class="weight">
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div class="submitdetails">
+                <a  style="text-decoration: none; color: aliceblue;"  href="./payment_methode.html" target="_blank">Book</a>
+            </div>
+        </div>
+        
+    </form>    
+</body>
+</html>

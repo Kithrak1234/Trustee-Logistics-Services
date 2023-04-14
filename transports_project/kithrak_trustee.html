@@ -1,0 +1,215 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kithrak Trustee</title>
+    <link rel="website icon" href=".//tls_icon.jpg" type="png">  
+</head>
+    <link rel="stylesheet" href=".//css/kithrakcss.css">
+    <link rel="stylesheet" href=".//forms/go_to_nextpage.js">
+    <script>
+      const form = document.querySelector('form');
+      const searchInput = document.querySelector('#search-input');
+      const searchResults = document.querySelector('#search-results');
+  
+         // Add an event listener to the form to handle submissions
+      form.addEventListener('submit', function(event) {
+          event.preventDefault(); // prevent the form from submitting
+  
+          const searchQuery = searchInput.value.toLowerCase();
+              // Get all search result items
+          const results = searchResults.querySelectorAll('li');
+            // Loop through all search results
+          for (let i = 0; i < results.length; i++) {
+            const resultText = results[i].textContent.toLowerCase();
+              // If the search query is not found in the result, hide it
+            if (!resultText.includes(searchQuery)) {
+                results[i].style.display = 'none';
+            } else {
+                results[i].style.display = 'block';
+            }
+          }
+      });
+  
+    </script>
+<body>
+    <div class="container">
+       <div class="icon">
+            <a href=".//kithrak_trustee.html"><img src=".//tls_icon.jpg" alt="logo" class="icon_img"></a>
+            <div class="heading"><h1>TRUSTEE LOGISTICS SERVICES</h1></div>
+        </div>
+    </div>
+    <div class="menus">
+      <div class="search"> 
+        <nav>
+          <ul>
+            <li><a href=".//kithrak_trustee.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#so-items">Contact</a></li>
+            <li>
+              <form>
+                <input id="search-input" type="text"  placeholder="Search...">
+                <button type="submit">Search</button>
+                
+              </form>
+              
+            </li>
+            <ul id="search-results">
+              <li><a  href="#delhivery" id="delhivery"></a></li>
+              <li>Search Result 2</li>
+              <li>Search Result 3</li>
+              <li>Search Result 4</li>
+            </ul>
+          </ul>
+          <li>
+           <div class="signin">
+            <a style="text-decoration: none;" href=".//forms/login.html" target="_blank">login</a>
+            <a style="text-decoration: none;" href=".//forms/create_account.html" target="_blank">SingIn</a>
+           </div>
+          
+          </li>
+        </nav>
+        
+      </div>
+      <div id="scroll-container">
+        <div id="scroll-text">Welcome to Trustee logistics services. ........,!!This Website Logistics and industrial Purpose only!!........,</div>
+      </div>
+      
+      
+    </div>
+    <div class="tracking">
+      <a  class="a_track" style="text-decoration: none;" href="https://trackcourier.io/" target="_blank">Track your order</a>
+    </div>
+   
+    <div class="section_heading">
+        <h2  id="about" class="about">About</h2>
+        <span class="section__subtitle">Logistics Feature</span>
+    </div>
+    <div class="paragraph" style="font-size: xx-large;">
+        <p class="font-awesome" style="font-size: 20px;">
+            Content marketing involves creating and distributing online materials to a targeted audience to build relationships and generate interest in a company. Blog posts, articles, videos, newsletters, and social media posts are all considered content.
+        </p>
+    </div>
+    <div href="#" class="transports"><h2 class="transports-head">TRANSPORTS & LOGISTICS</h2></div>
+    <div class="container1">
+      <div class="box1" id="delhivery">
+        <div class="delhivery">
+          <img src=".//delhivery-icon1.png" alt="girls" width="200" height="200">
+          <label for="delhivery">Delhivery</label>
+          <label for="offer">38% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="button" id="next-page-btn">Book</button></a>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="dtdc">
+          <img src=".//dtdc-icon.png" alt="boys" width="200" height="200">
+          <label for="dtdc">DTDC</label>
+          <label for="offer">20% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="button" id="next-page-btn">Book</button></a>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="bluedart">
+          <img src=".//bluedart-icon.png" alt="girls" width="200" height="200">
+          <label for="bluedart">Bluedart</label>
+          <label for="offer">38% Offer</label>
+           <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="fedex">
+          <img src=".//fedex-icon.png" alt="png" width="200" height="200">
+          <label for="fedex">Fedex</label>
+          <label for="offer">45% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box5">
+        <div class="gati">
+          <img src=".//gati-icon.png" alt="png" width="200" height="200">
+          <label for="gati">Gati</label>
+          <label for="offer">39% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box6">
+        <div class="dhl">
+          <img src=".//dhl-icon.png" alt="png" width="200" height="200">
+          <label for="dhl">Dhl</label>
+          <label for="offer">50% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box7">
+        <div class="ekart">
+          <img src=".//ekart-icon.png" alt="png" width="200" height="200">
+          <label for="ekart">Ekart</label>
+          <label for="offer">30% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box8">
+        <div class="ecomexp">
+          <img src=".//ecom-icon.png" alt="png" width="200" height="200">
+          <label for="ecomexp">EcomEpress</label>
+          <label for="offer">33% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box9">
+        <div class="safeexp">
+          <img src=".//safe-exp-icon.jpg" alt="png" width="200" height="200">
+          <label for="safeexp">Safe Express</label>
+          <label for="offer">40% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box10">
+        <div class="professional">
+          <img src=".//professional-icon.png" alt="png" width="200" height="200">
+          <label for="professional">Professional Couriers</label>
+          <label for="offer">20% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box11">
+        <div class="indiapost">
+          <img src=".//india-post-icon.png" alt="png" width="200" height="200">
+          <label for="indiapost">India Post</label>
+          <label for="offer">15% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box12">
+        <div class="xpressbess">
+          <img src=".//xpressbess-icon.webp" alt="png" width="200" height="200">
+          <label for="xpressbess">Xpressbess</label>
+          <label for="offer">20% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+      <div class="box13">
+        <div class="aramex">
+          <img src=".//ARAMEX-icon.webp" alt="png" width="200" height="200">
+          <label for="aramex">Aramex</label>
+          <label for="offer">33% Offer</label>
+          <a href=".//forms/booking.html" target="_blank"><button type="submit">Book</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="socialmedia">
+      <div class="so-icon">
+        <img id="so-items" class="so-items" src=".//fb-png.png" alt="png" width="50" height="50">
+        <img   class="so-items" src=".//insta-png.png" alt="png" width="50" height="50">
+        <img  class="so-items" src=".//twitter-png.png" alt="png" width="50" height="50">
+        <img  class="so-items" src=".//github-icon.png" alt="png" width="50" height="50">
+      </div>
+      
+    </div>
+
+
+        
+</body>
+</html>

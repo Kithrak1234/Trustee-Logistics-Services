@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Account</title>
+  </head>
+  <link rel="stylesheet" href="E:\karthik\project\transports_project\css\create_account.css">  
+  <body>
+    <h1>Create Account</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern=".{8,}" required>
+      
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password"  pattern=".{8,}" required oninput="check(this)">
+      
+      <button type="submit">Create Account</button>
+    </form>
+    <script>
+      function check(input) {
+        if (input.value != document.getElementById('password').value) {
+          input.setCustomValidity('Passwords must match.');
+        } else {
+          input.setCustomValidity('');
+        }
+      }
+      function goToLoginPage() {
+        window.location = "E:\karthik\project\transports_project\forms\login.html"; // replace "login.html" with the actual URL of your login page
+      }
+    </script>
+    
+  </body>
+</html>

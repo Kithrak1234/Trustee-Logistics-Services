@@ -1,0 +1,17 @@
+.order-confirmed-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make button a block element */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Add some margin */
+    cursor: pointer; /* Change cursor on hover */
+}
+  
+.order-confirmed-btn:hover {
+    background-color: #3e8e41; /* Darker green background on hover */
+}
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="E:\karthik\project\transports_project\css\logincss.css">
+<style>
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color:green;
+    pointer-events: none;
+    transition: .5s;
+
+}
+.login-box a:hover{
+    background: #5cdb95;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #5cdb95,
+            0 0 25px #5cdb95,
+            0 0 50px #5cdb95,
+            0 0 100px #5cdb95,
+}
+.login-box a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#5cdb95);
+    animation: btn-anim1 1s linear infinite;
+}
+</style>
+<body>
+    <div class="login-box">
+        <h2>login</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+    </div>
+</body>
+</html>
